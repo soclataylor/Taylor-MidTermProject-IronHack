@@ -10,9 +10,9 @@
             Colors:
             -------
 
-            Text: 
-            Green: 
-            White: 
+            BLUES: #072AC8      #43D2FF     #A2D6F9     #D1EDFF
+            GRAYS: #292E47      #6B708D     #F2F4FC     #ECF7FF
+            YELLOW: #FFC600 
 
 */
 
@@ -26,5 +26,4 @@
     padding: 0;
     margin: 0;
     font-family: "Roboto";
-
 }
