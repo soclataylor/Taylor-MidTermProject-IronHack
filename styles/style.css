@@ -19,12 +19,95 @@
 
 /*  we first import the font    */
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+/* we import font-awesome to be able to add an icon as a placeholder at the form */
+@import url("//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css");
 
-* 
+* /* all elements*/
 {
     /* we initially define by default margin and padding as 0*/
     padding: 0;
     margin: 0;
     font-family: "Roboto";
+
+}
+
+body
+{
+    background-color: #F2F4FC;
+    color:#514D67;
+    margin: 150px;
+   
+}
+
+h1, h2
+{
+    color:black;
+}
+
+/****************               NAV BAR                 ****************/
+nav
+{
+    display:flex;
+    flex-direction:row; /* from left to right */
+    flex-wrap:nowrap; /* to fit it all in the same line */
+    justify-content:space-between; /* same space leftitem-leftmargin and rightitem-rightmargin */
+    height:122px;
+    align-items:baseline;
+}
+
+ul {
+
+	list-style-type: none; /*remove the markers */
+	/*background-color: yellow;*/
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	/*per posicionar cada enllaç a la mateixa línia (de cantó)*/
+	float: left;
+}
+
+li a /* links inside the list */ 
+{
+	text-decoration: none;
+	/*padding: 30px;*/
+    margin:0px 30px;;
+	text-align: center;
+	display: block; /* so it behaves like a block*/
+	color:#514D67;
+}
+
+li a:hover 
+{
+	/*quan passem per sobre dels enllaços que formen part d'un li*/
+	color:#072AC8;
+}
+
+.active 
+{
+	color:#072AC8;
+}
+
+button
+{
+
+    padding:10px 20px;
+    border:none;
+    text-align:center;
+
+}
+
+button a
+{
+    text-decoration:none;
+    color:white;
+}
+
+.blue-button
+{
+    background-color:#072AC8;
+    color:white;
 
 }

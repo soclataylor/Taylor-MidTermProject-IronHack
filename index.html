@@ -44,7 +44,7 @@
 
             <div id="middle-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="#projects">Projects</a></li><!--anchor-->
                     <li><a href="#services">Services</a></li><!--anchor-->
                 </ul>
@@ -63,7 +63,7 @@
                 <p>Taylor is a digital design and development studio. 
                     We design and develop astonishing websites and mobile apps.</p>
                 
-                    <button><a href="contact.html">Get in touch</a></button>
+                    <button class="blue-button"><a href="contact.html">Get in touch</a></button>
                     <button><a href="#projects">See our work</a></button>
             </div><!--end of left hero-->
             <div id="right-hero">
@@ -115,10 +115,13 @@
             <h2 id="heading-testimonials">Hear What Our Clients Have to Say</h2>
             <blockquote>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</blockquote>
           
-            <!--                ASK TEACHERS            -->
-            <img src="images/testimonial-section/profile.png" alt="profile picture">
-            Kristin Watson
-            Booking.com
+            <!--                ASK TEACHERS: un div con display flex (izquierdo, derecho y luego p, o lo q sea para los textos)            -->
+            <div id="kristin">
+                <img id="kris-image" src="images/testimonial-section/profile.png" alt="Kristin Watson's Profile Picture">
+                <p>Kristin Watson<br>Booking.com</p>
+            </div>
+            
+   
         </section><!--end of testimonial section-->
 
         <section id="services">
@@ -155,6 +158,7 @@
             <p>Let us help you!</p>
             <form>
                 <input type="text" placeholder="Enter your email">
+                <!-- HELP!! icon as a placeholder-->
                 <input type="submit" value="Subscribe" class="blue-button">
             </form>
           
