@@ -45,14 +45,14 @@
             <div id="middle-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#projects">Projects</a></li><!--anchor-->
-                    <li><a href="#services">Services</a></li><!--anchor-->
+                        <li><a href="index.html#projects">Projects</a></li><!--anchor to index-->
+                        <li><a href="index.html#services">Services</a></li><!--anchor to index-->
                 </ul>
 
             </div><!--end of middle nav -->
 
             <div id="right-nav">
-                    <button>Contact Us</button>
+                    <button><a href="contact.html">Contact Us</a></button>
             </div><!--end of right nav-->
 
         </nav><!--end of navigation bar-->
@@ -62,18 +62,18 @@
 
             <form>
                 <label for="name">Full Name *</label><br>
-                <input type="text" name="name" id="name" required placeholder="Enter your full name" size="10">
+                <input type="text" name="name" id="name" required placeholder="Enter your full name" size="10"><br>
 
                 <label for="mail">Email</label><br>
-                <input type="text" name="mail" id="mail" required placeholder="Enter your mail address" size="5">
+                <input type="text" name="mail" id="mail" required placeholder="Enter your mail address" size="5"><br>
 
                 <label for="mail">Phone</label><br>
-                <input type="text" name="phone" id="phone" required placeholder="Enter your phone number" size="5">
+                <input type="text" name="phone" id="phone" required placeholder="Enter your phone number" size="5"><br>
 
                 <label for="message">Message</label><br>
                 <textarea id="message" name="message" rows="4" cols="50" maxlength="200">
                     Write your message here ...
-                </textarea>
+                </textarea><br>
 
                 <input type="submit" value="submit" class="blue-button">
 
