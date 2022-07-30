@@ -60,96 +60,108 @@
         <section id="hero">
             <div id="left-hero">
                 <h1>Empower Your Business With Stunning Design!</h1>
-                <p>Taylor is a digital design and development studio. 
+                <p>Taylor is a digital design and development studio.<br> 
                     We design and develop astonishing websites and mobile apps.</p>
                 
                     <button class="blue-button"><a href="contact.html">Get in touch</a></button>
-                    <button><a href="#projects">See our work</a></button>
+                    <button id="see-work"><a href="#projects">See our work</a></button>
             </div><!--end of left hero-->
             <div id="right-hero">
-                <img src="images/hero-section/hero-image.png" alt="hero image">
-                <img src="images/hero-section/card-1.png" alt="hero card">
-                <img src="images/hero-section/card-2.png" alt="another hero card">
+                <img id="image1" src="images/hero-section/hero-image.png" alt="hero image">
+                <img id="image2" class="hero-small-image" src="images/hero-section/card-1.png" alt="hero card">
+                <img id="image3" class="hero-small-image" src="images/hero-section/card-2.png" alt="another hero card">
             </div>
 
         </section><!--end of hero section-->
 
         <section id="client">
-            <img src="images/logos/airbnb-logo.svg" alt="AirBnB logo">
-            <img src="images/logos/google-logo.svg" alt="google logo">
-            <img src="images/logos/microsoft-logo.svg" alt="microsoft logo">
-            <img src="images/logos/fedex-logo.svg" alt="fedex logo">
-            <img src="images/logos/amazon-logo.svg" alt="amazon logo">
+            <img src="images/logos/airbnb-logo.svg" class="image-client" alt="AirBnB logo">
+            <img src="images/logos/google-logo.svg" class="image-client" alt="google logo">
+            <img src="images/logos/microsoft-logo.svg" class="image-client" alt="microsoft logo">
+            <img src="images/logos/fedex-logo.svg" class="image-client" alt="fedex logo">
+            <img src="images/logos/amazon-logo.svg" class="image-client" alt="amazon logo">
         </section><!--end of client section-->
 
         <section id="projects">
             <h2>Recent Projects</h2>
 
-            <div id="project1" class="project">
-                <img src="images/projects-section/1.jpg" alt="project simplify">
-                <h3>Simplify</h3>
-                <p>UI Design & App Development</p>
-                <a href="project.html" class="learn-more">Learn more</a>
+            <div class="cards-container">
 
-            </div><!--end of project 1-->
+                    <div id="project1" class="card">
+                        <img src="images/projects-section/1.jpg" alt="project simplify">
+                        <h3>Simplify</h3>
+                        <p>UI Design & App Development</p>
+                        <a href="project.html" class="learn-more">Learn more</a>
 
-            <div id="project2" class="project">
-                <img src="images/projects-section/2.jpg" alt="project dashcoin">
-                <h3>Dashcoin</h3>
-                <p>Web Development</p>
-                <a href="project.html" class="learn-more">Learn more</a>
+                    </div><!--end of project 1-->
 
-            </div><!--end of project 2-->
-            
-            <div id="project3" class="project">
-                <img src="images/projects-section/3.jpg" alt="project vectorify">
-                <h3>Vectorify</h3>
-                <p>User Experience Design</p>
-                <a href="project.html" class="learn-more">Learn more</a>
+                    <div id="project2" class="card">
+                        <img src="images/projects-section/2.jpg" alt="project dashcoin">
+                        <h3>Dashcoin</h3>
+                        <p>Web Development</p>
+                        <a href="project.html" class="learn-more">Learn more</a>
 
-            </div><!--end of project 3-->
+                    </div><!--end of project 2-->
+                    
+                    <div id="project3" class="card">
+                        <img src="images/projects-section/3.jpg" alt="project vectorify">
+                        <h3>Vectorify</h3>
+                        <p>User Experience Design</p>
+                        <a href="project.html" class="learn-more">Learn more</a>
+
+                    </div><!--end of project 3-->
            
+            </div><!-- enf of project cards-->
+
         </section><!--end of projects section-->
 
         <section id="testimonial">
-            <h2 id="heading-testimonials">Hear What Our Clients Have to Say</h2>
-            <blockquote>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</blockquote>
+            <h2>Hear What Our Clients Have to Say</h2>
+            <blockquote>“Circle helped us through every stage of our startup.<br>We really enjoyed working with you.”</blockquote>
           
             <!--                ASK TEACHERS: un div con display flex (izquierdo, derecho y luego p, o lo q sea para los textos)            -->
             <div id="kristin">
-                <img id="kris-image" src="images/testimonial-section/profile.png" alt="Kristin Watson's Profile Picture">
-                <p>Kristin Watson<br>Booking.com</p>
+                <img src="images/testimonial-section/profile.png" alt="Kristin Watson's Profile Picture">
+                <p><span id="name-kristin">Kristin Watson</span><br><span id="booking-kristin">Booking.com</span></p>
             </div>
+
+            <div id="emojis">
+                <img id="emoji1" class="emoji-image" src="images/testimonial-section/memoji-1.png" alt="emoji face">
+                <img id="emoji2" class="emoji-image" src="images/testimonial-section/memoji-2.png" alt="emoji face">
+                <img id="emoji3" class="emoji-image" src="images/testimonial-section/memoji-3.png" alt="emoji face">
+                <img id="emoji4" class="emoji-image" src="images/testimonial-section/memoji-4.png" alt="emoji face">
+            </div><!--end of emojis-->
             
-   
         </section><!--end of testimonial section-->
 
         <section id="services">
             <h2>Our Services</h2>
 
-            <div id="service1">
-                <img src="images/services-section/icons/1.svg" alt="user interface design">
-                <h3>User Interface Design</h3>
-                <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
-                <a href="#" class="learn-more">Learn more</a>
+            <div class="cards-container">
+                    <div id="service1" class="card">
+                        <img src="images/services-section/icons/1.svg" alt="user interface design">
+                        <h3>User Interface Design</h3>
+                        <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                        <a href="#" class="learn-more">Learn more</a>
 
-            </div><!--end of service 1-->
+                    </div><!--end of service 1-->
 
-            <div id="service2">
-                <img src="images/services-section/icons/2.svg" alt="user experience design">
-                <h3>User Experience Design</h3>
-                <p>Circle always focuses on delivering the best user experience to your customers.</p>
-                <a href=#" class="learn-more">Learn more</a>
+                    <div id="service2" class="card">
+                        <img src="images/services-section/icons/2.svg" alt="user experience design">
+                        <h3>User Experience Design</h3>
+                        <p>Circle always focuses on delivering the best user experience to your customers.</p>
+                        <a href=#" class="learn-more">Learn more</a>
 
-            </div><!--end of service 2-->
+                    </div><!--end of service 2-->
 
-            <div id="service3">
-                <img src="images/services-section/icons/3.svg" alt="application development">
-                <h3>Application Development</h3>
-                <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
-                <a href="#" class="learn-more">Learn more</a>
+                    <div id="service3" class="card">
+                        <img src="images/services-section/icons/3.svg" alt="application development">
+                        <h3>Application Development</h3>
+                        <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
+                        <a href="#" class="learn-more">Learn more</a>
 
-            </div><!--end of service 3-->
+                    </div><!--end of service 3-->
+            </div><!--end of cards div-->
            
         </section><!--end of services section-->
 
@@ -159,7 +171,7 @@
             <form>
                 <input type="text" placeholder="Enter your email">
                 <!-- HELP!! icon as a placeholder-->
-                <input type="submit" value="Subscribe" class="blue-button">
+                <button class="blue-button">Subscribe</button>
             </form>
           
         </section><!--end of CTA section-->

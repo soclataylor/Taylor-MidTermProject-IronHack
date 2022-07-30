@@ -19,8 +19,10 @@
 
 /*  we first import the font    */
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+
 /* we import font-awesome to be able to add an icon as a placeholder at the form */
 @import url("//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css");
+
 
 * /* all elements*/
 {
@@ -35,13 +37,36 @@ body
 {
     background-color: #F2F4FC;
     color:#514D67;
-    margin: 150px;
-   
+    margin: 100px;
+    font-weight:400;
+    size:18px;
+}
+#container
+{
+    background-color:violet;
 }
 
 h1, h2
 {
-    color:black;
+    color: #292E47;
+}
+
+h1
+{
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom:30px;
+
+}
+
+h2
+{
+    margin-bottom: 40px;
+}
+
+p
+{
+    line-height: 30px;
 }
 
 /****************               NAV BAR                 ****************/
@@ -51,14 +76,13 @@ nav
     flex-direction:row; /* from left to right */
     flex-wrap:nowrap; /* to fit it all in the same line */
     justify-content:space-between; /* same space leftitem-leftmargin and rightitem-rightmargin */
-    height:122px;
     align-items:baseline;
+    background-color:gold;
 }
 
 ul {
 
 	list-style-type: none; /*remove the markers */
-	/*background-color: yellow;*/
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -77,6 +101,7 @@ li a /* links inside the list */
 	text-align: center;
 	display: block; /* so it behaves like a block*/
 	color:#514D67;
+    font-size:12px;
 }
 
 li a:hover 
@@ -109,5 +134,256 @@ button a
 {
     background-color:#072AC8;
     color:white;
+    font-weight: 500;
 
+}
+
+#see-work
+{
+
+    color:black;
+    font-weight: 500;
+    margin-left:20px;
+    background-color: #F2F4FC
+}
+
+/****************               HERO SECTION                 ****************/
+#hero
+{
+    display:flex;
+    flex-direction:row; /* from left to right */
+    flex-wrap:nowrap; /* to fit it all in the same line */
+    justify-content:center; /* same space leftitem-leftmargin and rightitem-rightmargin */
+    /*align-items:baseline;*/
+    margin-top:80px;
+    margin-bottom: 100px;
+    background-color:crimson;
+    
+}
+
+#left-hero
+{
+    padding-top:100px;
+    width: 340px;
+
+}
+
+#left-hero p
+{
+    margin-bottom:30px;
+    font-size:14px;
+    line-height: 20px;
+}
+
+#right-hero
+{
+    position:relative;
+    top:0;
+    left:0;
+
+
+}
+
+#image1
+{
+    width:400px;
+    height:auto;
+    position:relative; /*the background image as relative position*/
+    top:0;
+    left:0;
+    opacity: 0.7;
+}
+
+
+#image2
+{
+    position:absolute;
+    left:-60px;
+    top:-10px;
+    width:250px;
+    height:auto;
+
+
+}
+
+#image3
+{
+    position:absolute;
+    right:-50px;
+    bottom:-100px;
+    width:250px;
+    height:auto;
+
+
+
+}
+
+
+
+/****************               CLIENT SECTION                 ****************/
+#client
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 130px;
+    margin-top:180px;
+    background-color:skyblue;
+}
+
+.image-client
+{
+    filter:grayscale();
+}
+
+/****************               PROJECTS SECTION                 ****************/
+#projects
+{
+    margin-bottom: 150px;
+    background-color:darkkhaki;
+}
+.cards-container
+{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around
+    
+}
+
+.card
+{
+    width:340px;
+    background-color:white;
+    box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
+}
+
+.card img
+{
+    width:340px;
+    height:240px;
+}
+
+/****************               TESTIMONIAL SECTION                 ****************/
+#testimonial
+{
+    
+    text-align:center;
+    background-image:url('images/testimonial-section/orbit.png');
+    background-position:0 0;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-color:#292E47;
+    position:relative;
+    top:0;
+    left:0;
+    
+
+    
+}
+
+#testimonial h2
+{
+    color:white;
+    margin-top:80px;
+    font-weight: 700;
+    height:400px;
+
+}
+blockquote
+{
+    color: #FFC600;
+    line-height: 38px;
+}
+
+.emoji-image
+{
+    width:150px;
+    height:150px;
+}
+
+#emoji1
+{
+    position:absolute;
+    top:51px;
+    left:50px;
+}
+
+#emoji2
+{
+    position:absolute;
+    top:51px;
+    right:50px;
+}
+
+#emoji3
+{
+    position:absolute;
+    bottom:50px;
+    left:50px;
+}
+
+
+#emoji4
+{
+    position:absolute;
+    bottom:50px;
+    right:50px;
+}
+
+#kristin
+{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    line-height:17px;
+    margin-top:100px;
+}
+
+#kristin img
+{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+#name-kristin
+{
+    color:#A2D6F9;
+    font-size: 17px;
+    font-weight:400;
+
+}
+
+#booking-kristin
+{
+    color:#F4F6FC;
+    font-size:13px;
+    font-weight: 400;
+
+}
+
+/****************               SERVICES SECTION                 ****************/
+
+#services
+{
+    background-color: deeppink;
+}
+
+
+
+
+/****************               CTA SECTION                 ****************/
+#CTA
+{
+    background-color: #FFC600;
+    text-align:center;
+}
+
+
+
+/****************               FOOTER                 ****************/
+footer
+{
+    background-color:olive
 }
