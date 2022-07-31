@@ -33,7 +33,7 @@
 
    <div id="container">
         <nav> <!--navigation bar-->
-            <div id="logo-nav" style="width:100px">
+            <div id="logo-nav">
                 <img src="images/logos/taylor.svg" alt="Taylor logo">
                 <!--
 
@@ -57,25 +57,31 @@
 
         </nav><!--end of navigation bar-->
 
-        <section>
+        <section id="contact-us">
             <h1>Contact Us</h1>
 
             <form>
                 <label for="name">Full Name *</label><br>
-                <input type="text" name="name" id="name" required placeholder="Enter your full name" size="10"><br>
+                <input type="text" name="name" id="name" required placeholder="Enter your full name" class="label-100"><br>
 
-                <label for="mail">Email</label><br>
-                <input type="text" name="mail" id="mail" required placeholder="Enter your mail address" size="5"><br>
+                <div id="mail-phone">
+                    <div>
+                        <label for="mail">Email</label><br>
+                        <input type="email" name="mail" id="mail" required placeholder="Enter your mail address"><br>
+                    </div>
 
-                <label for="mail">Phone</label><br>
-                <input type="text" name="phone" id="phone" required placeholder="Enter your phone number" size="5"><br>
+                    <div>
+                        <label for="mail">Phone</label><br>
+                        <input type="tel" name="phone" id="phone" required placeholder="Enter your phone number"><br>
+                    </div>
+                </div><!--end of mail-phone-->
 
                 <label for="message">Message</label><br>
-                <textarea id="message" name="message" rows="4" cols="50" maxlength="200">
+                <textarea id="message" name="message" rows="4" cols="50" maxlength="200" class="label-100">
                     Write your message here ...
                 </textarea><br>
 
-                <input type="submit" value="submit" class="blue-button">
+                <button id="submit-form" class="blue-button">Submit</button>
 
             </form>
 

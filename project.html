@@ -32,7 +32,7 @@
 
         <div id="container">
             <nav> <!--navigation bar-->
-                <div id="logo-nav" style="width:100px">
+                <div id="logo-nav">
                     <img src="images/logos/taylor.svg" alt="Taylor logo">
                     <!--
     
@@ -60,8 +60,11 @@
             <section id="main-project">
                 <h1>Simplify</h1>
                 <!-- ASK TEACHERS!!-->
-                <p id="subtitle">UI Design & App Development</p>
-                <p id="date-completed">Completed on June 22, 2021</p>
+                <div id="subtitle-date">
+                    <p id="subtitle">UI Design & App Development</p>
+                    <p id="date-completed">Completed on June 22, 2021</p>
+                </div><!--end of subtitle date-->
+                
                 <img src="images/projects-section/1.jpg" alt="project simplify">
 
                 <p>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
@@ -95,39 +98,47 @@
             <section id="other-projects">
                 <h2>Other Projects</h2>
 
-                <div id="project4" class="project">
-                    <img src="images/projects-section/4.jpg" alt="project orbit">
-                    <h3>Orbit</h3>
-                    <p>UI Design</p>
-                    <a href="" class="learn-more">Learn more</a>
+                <div class="cards-container">
+                    <div id="project4" class="card">
+                        <img src="images/projects-section/4.jpg" alt="project orbit">
+                        <div class="text-card">
+                            <h3>Orbit</h3>
+                            <p>UI Design</p>
+                            <a href="" class="learn-more">Learn more</a>
+                        </div><!--end of text-card-->
 
-                </div><!--end of project 1-->
+                    </div><!--end of project 1-->
 
-                <div id="project5" class="project">
-                    <img src="images/projects-section/5.jpg" alt="project purify">
-                    <h3>Purify</h3>
-                    <p>UI/UX Design</p>
-                    <a href="" class="learn-more">Learn more</a>
+                    <div id="project5" class="card">
+                        <img src="images/projects-section/5.jpg" alt="project purify">
+                        <div class="text-card">
+                            <h3>Purify</h3>
+                            <p>UI/UX Design</p>
+                            <a href="" class="learn-more">Learn more</a>
+                        </div><!--end of text-card-->
 
-                </div><!--end of project 2-->
-                
-                <div id="project6" class="project">
-                    <img src="images/projects-section/6.jpg" alt="project cryptopie">
-                    <h3>CryptoPie</h3>
-                    <p>App Development</p>
-                    <a href="" class="learn-more">Learn more</a>
+                    </div><!--end of project 2-->
+                    
+                    <div id="project6" class="card">
+                        <img src="images/projects-section/6.jpg" alt="project cryptopie">
+                        <div class="text-card">   
+                            <h3>CryptoPie</h3>
+                            <p>App Development</p>
+                            <a href="" class="learn-more">Learn more</a>
+                        </div><!--end of text-card-->
 
-                </div><!--end of project 3-->
-
+                    </div><!--end of project 3-->
+                </div><!--end of cards-container-->
 
             </section><!--end of other projects-->
 
-            <section id="CTA">
+            <section id="cta" class="short-margins">
                 <h2>Do you have any questions?</h2>
                 <p>Let us help you!</p>
                 <form>
-                    <input type="text" placeholder="Enter your email">
-                    <input type="submit" value="Subscribe" class="blue-button">
+                    <input id="cta-mail" type="text" placeholder="Enter your email">
+                    <!-- HELP!! icon as a placeholder-->
+                    <button class="blue-button">Subscribe</button>
                 </form>
               
             </section><!--end of CTA section-->

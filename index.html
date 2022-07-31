@@ -32,8 +32,8 @@
 
     <div id="container">
 
-        <nav> <!--navigation bar-->
-            <div id="logo-nav" style="width:100px">
+        <nav class="general-margins"> <!--navigation bar-->
+            <div id="logo-nav">
                 <img src="images/logos/taylor.svg" alt="Taylor logo">
                 <!--
 
@@ -57,7 +57,7 @@
 
         </nav><!--end of navigation bar-->
 
-        <section id="hero">
+        <section id="hero" class="general-margins">
             <div id="left-hero">
                 <h1>Empower Your Business With Stunning Design!</h1>
                 <p>Taylor is a digital design and development studio.<br> 
@@ -74,7 +74,7 @@
 
         </section><!--end of hero section-->
 
-        <section id="client">
+        <section id="client" class="general-margins">
             <img src="images/logos/airbnb-logo.svg" class="image-client" alt="AirBnB logo">
             <img src="images/logos/google-logo.svg" class="image-client" alt="google logo">
             <img src="images/logos/microsoft-logo.svg" class="image-client" alt="microsoft logo">
@@ -82,32 +82,41 @@
             <img src="images/logos/amazon-logo.svg" class="image-client" alt="amazon logo">
         </section><!--end of client section-->
 
-        <section id="projects">
+        <section id="projects" class="general-margins">
             <h2>Recent Projects</h2>
 
             <div class="cards-container">
 
                     <div id="project1" class="card">
                         <img src="images/projects-section/1.jpg" alt="project simplify">
-                        <h3>Simplify</h3>
-                        <p>UI Design & App Development</p>
-                        <a href="project.html" class="learn-more">Learn more</a>
+
+                        <div class="text-card">
+                            <h3>Simplify</h3>
+                            <p>UI Design & App Development</p>
+                            <a href="project.html" class="learn-more">Learn more</a>
+                        </div><!--end of text-card-->
 
                     </div><!--end of project 1-->
 
                     <div id="project2" class="card">
                         <img src="images/projects-section/2.jpg" alt="project dashcoin">
-                        <h3>Dashcoin</h3>
-                        <p>Web Development</p>
-                        <a href="project.html" class="learn-more">Learn more</a>
+
+                        <div class="text-card">
+                            <h3>Dashcoin</h3>
+                            <p>Web Development</p>
+                            <a href="project.html" class="learn-more">Learn more</a>
+                        </div><!--end of text-card-->
 
                     </div><!--end of project 2-->
                     
                     <div id="project3" class="card">
                         <img src="images/projects-section/3.jpg" alt="project vectorify">
-                        <h3>Vectorify</h3>
-                        <p>User Experience Design</p>
-                        <a href="project.html" class="learn-more">Learn more</a>
+
+                        <div class="text-card">
+                            <h3>Vectorify</h3>
+                            <p>User Experience Design</p>
+                            <a href="project.html" class="learn-more">Learn more</a>
+                        </div><!--end of text-card-->
 
                     </div><!--end of project 3-->
            
@@ -115,7 +124,7 @@
 
         </section><!--end of projects section-->
 
-        <section id="testimonial">
+        <section id="testimonial" class="short-margins">
             <h2>Hear What Our Clients Have to Say</h2>
             <blockquote>“Circle helped us through every stage of our startup.<br>We really enjoyed working with you.”</blockquote>
           
@@ -134,42 +143,48 @@
             
         </section><!--end of testimonial section-->
 
-        <section id="services">
+        <section id="services" class="general-margins">
             <h2>Our Services</h2>
 
             <div class="cards-container">
                     <div id="service1" class="card">
-                        <img src="images/services-section/icons/1.svg" alt="user interface design">
-                        <h3>User Interface Design</h3>
-                        <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
-                        <a href="#" class="learn-more">Learn more</a>
+                        <div class="text-card">
+                            <img src="images/services-section/icons/1.svg" alt="user interface design">
+                            <h3>User Interface Design</h3>
+                            <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                            <a href="#" class="learn-more">Learn more</a>
+                        </div><!--end of text-card-->
 
                     </div><!--end of service 1-->
 
                     <div id="service2" class="card">
-                        <img src="images/services-section/icons/2.svg" alt="user experience design">
-                        <h3>User Experience Design</h3>
-                        <p>Circle always focuses on delivering the best user experience to your customers.</p>
-                        <a href=#" class="learn-more">Learn more</a>
+                        <div class="text-card">
+                            <img src="images/services-section/icons/2.svg" alt="user experience design">
+                            <h3>User Experience Design</h3>
+                            <p>Circle always focuses on delivering the best user experience to your customers.</p>
+                            <a href=#" class="learn-more">Learn more</a>
+                        </div><!--end of text-card-->
 
                     </div><!--end of service 2-->
 
                     <div id="service3" class="card">
-                        <img src="images/services-section/icons/3.svg" alt="application development">
-                        <h3>Application Development</h3>
-                        <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
-                        <a href="#" class="learn-more">Learn more</a>
+                        <div class="text-card">
+                            <img src="images/services-section/icons/3.svg" alt="application development">
+                            <h3>Application Development</h3>
+                            <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
+                            <a href="#" class="learn-more">Learn more</a>
+                        </div><!--end of text-card-->
 
                     </div><!--end of service 3-->
             </div><!--end of cards div-->
            
         </section><!--end of services section-->
 
-        <section id="CTA">
+        <section id="cta" class="short-margins">
             <h2>Do you have any questions?</h2>
             <p>Let us help you!</p>
             <form>
-                <input type="text" placeholder="Enter your email">
+                <input id="cta-mail" type="text" placeholder="Enter your email">
                 <!-- HELP!! icon as a placeholder-->
                 <button class="blue-button">Subscribe</button>
             </form>
@@ -195,7 +210,6 @@
 
     </div> <!--end of container-->
      
-
       <!--BONUS: adding animations to different sections, like the “recent projects” cards.-->
 
   </body>

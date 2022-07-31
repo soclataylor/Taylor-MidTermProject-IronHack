@@ -16,6 +16,7 @@
 
 */
 
+/****************               GENERAL STYLES                 ****************/
 
 /*  we first import the font    */
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
@@ -37,13 +38,13 @@ body
 {
     background-color: #F2F4FC;
     color:#514D67;
-    margin: 100px;
+    /*margin: 60px;*/
+    margin-top:60px;
+    margin-bottom:60px;
+    padding-left:60px;
+    padding-right:60px;
     font-weight:400;
     size:18px;
-}
-#container
-{
-    background-color:violet;
 }
 
 h1, h2
@@ -69,6 +70,30 @@ p
     line-height: 30px;
 }
 
+a /* all links in the document*/
+{
+    text-decoration: none;
+}
+
+input[type=text], input[type="email"],input[type="tel"]
+{
+    box-sizing: border-box; /*so the width contains the padding*/
+    height:45px;
+    padding:15px;
+    border:none;
+}
+
+a:visited 
+{
+    color:inherit; /* so that color doesn't change when a link is already visited*/
+}
+
+.general-margins
+{
+    margin-left:140px;
+    margin-right:140px;
+}
+
 /****************               NAV BAR                 ****************/
 nav
 {
@@ -76,10 +101,15 @@ nav
     flex-direction:row; /* from left to right */
     flex-wrap:nowrap; /* to fit it all in the same line */
     justify-content:space-between; /* same space leftitem-leftmargin and rightitem-rightmargin */
-    align-items:baseline;
-    background-color:gold;
+    align-items:center;
+
+
 }
 
+#logo-nav
+{
+    width: 70px;
+}
 ul {
 
 	list-style-type: none; /*remove the markers */
@@ -95,13 +125,12 @@ li {
 
 li a /* links inside the list */ 
 {
-	text-decoration: none;
 	/*padding: 30px;*/
     margin:0px 30px;;
 	text-align: center;
 	display: block; /* so it behaves like a block*/
 	color:#514D67;
-    font-size:12px;
+    font-size:14px;
 }
 
 li a:hover 
@@ -118,9 +147,10 @@ li a:hover
 button
 {
 
-    padding:10px 20px;
+    padding:15px 25px;
     border:none;
     text-align:center;
+
 
 }
 
@@ -128,6 +158,7 @@ button a
 {
     text-decoration:none;
     color:white;
+    font-size: 12px;
 }
 
 .blue-button
@@ -140,11 +171,15 @@ button a
 
 #see-work
 {
-
-    color:black;
-    font-weight: 500;
     margin-left:20px;
-    background-color: #F2F4FC
+}
+
+#see-work a
+{
+
+    color:#6B708D;
+    font-weight: 500;
+
 }
 
 /****************               HERO SECTION                 ****************/
@@ -157,7 +192,8 @@ button a
     /*align-items:baseline;*/
     margin-top:80px;
     margin-bottom: 100px;
-    background-color:crimson;
+
+
     
 }
 
@@ -165,6 +201,7 @@ button a
 {
     padding-top:100px;
     width: 340px;
+    margin-right:100px;
 
 }
 
@@ -186,7 +223,7 @@ button a
 
 #image1
 {
-    width:400px;
+    width:500px;
     height:auto;
     position:relative; /*the background image as relative position*/
     top:0;
@@ -200,7 +237,7 @@ button a
     position:absolute;
     left:-60px;
     top:-10px;
-    width:250px;
+    width:300px;
     height:auto;
 
 
@@ -211,7 +248,7 @@ button a
     position:absolute;
     right:-50px;
     bottom:-100px;
-    width:250px;
+    width:300px;
     height:auto;
 
 
@@ -226,9 +263,8 @@ button a
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 130px;
-    margin-top:180px;
-    background-color:skyblue;
+    margin-top:140px;
+    margin-bottom:130px;
 }
 
 .image-client
@@ -240,35 +276,66 @@ button a
 #projects
 {
     margin-bottom: 150px;
-    background-color:darkkhaki;
-}
-.cards-container
-{
-    display:flex;
-    flex-direction: row;
-    justify-content:space-around
-    
+
 }
 
-.card
-{
-    width:340px;
-    background-color:white;
-    box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
-}
 
-.card img
-{
-    width:340px;
-    height:240px;
-}
+        /*************************   CARDS  (projects and services sections) ********************************/
+        .cards-container
+        {
+            display:flex;
+            flex-direction: row;
+            justify-content:space-between;
+            
+        }
+
+        .card
+        {
+            width:290px;
+            background-color:white;
+            box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img
+        {
+            width:290px;
+            height:200px;
+        }
+
+        .text-card
+        {
+            padding:25px;
+
+        }
+        .text-card p, a
+        {
+            font-size:14px;
+        }
+
+        .text-card p
+        {
+            margin-bottom:40px;
+            line-height:25px;
+        }
+
+        .text-card img
+        {
+            margin-bottom: 20px;
+        }
+
+        .text-card h3
+        {
+            margin-bottom: 15px;
+        }
+
+        /*************************   EOCARDS ********************************/
 
 /****************               TESTIMONIAL SECTION                 ****************/
 #testimonial
 {
     
     text-align:center;
-    background-image:url('images/testimonial-section/orbit.png');
+    background-image:url("../images/testimonial-section/orbit.png");
     background-position:0 0;
     background-repeat:no-repeat;
     background-size:cover;
@@ -284,50 +351,53 @@ button a
 #testimonial h2
 {
     color:white;
-    margin-top:80px;
+    padding-top:80px;
     font-weight: 700;
-    height:400px;
+    padding-bottom:50px;
+
 
 }
 blockquote
 {
     color: #FFC600;
-    line-height: 38px;
+    line-height: 25px;
+    font-size:14px;
+    font-weight:500;
 }
 
 .emoji-image
 {
-    width:150px;
-    height:150px;
+    width:100px;
+    height:100px;
 }
 
 #emoji1
 {
     position:absolute;
-    top:51px;
-    left:50px;
+    top:45px;
+    left:45px;
 }
 
 #emoji2
 {
     position:absolute;
-    top:51px;
-    right:50px;
+    top:45px;
+    right:45px;
 }
 
 #emoji3
 {
     position:absolute;
-    bottom:50px;
-    left:50px;
+    bottom:45px;
+    left:45px;
 }
 
 
 #emoji4
 {
     position:absolute;
-    bottom:50px;
-    right:50px;
+    bottom:45px;
+    right:45px;
 }
 
 #kristin
@@ -335,31 +405,44 @@ blockquote
     display:flex;
     flex-direction:row;
     justify-content: center;
-    line-height:17px;
-    margin-top:100px;
+    align-items:center;
+    margin-top:60px;
+    padding-bottom:70px;
+    height:50px;
+
 }
 
 #kristin img
 {
-    width:50px;
-    height:50px;
+    width:45px;
+    height:45px;
     border-radius:50%;
-    margin-right:10px;
+    margin-right:8px;
+}
+
+#kristin p
+{
+    line-height:12px;
+    text-align:left;
 }
 
 #name-kristin
 {
     color:#A2D6F9;
-    font-size: 17px;
+    font-size: 12px;
     font-weight:400;
+
+
 
 }
 
 #booking-kristin
 {
     color:#F4F6FC;
-    font-size:13px;
+    font-size:10px;
     font-weight: 400;
+
+
 
 }
 
@@ -367,23 +450,189 @@ blockquote
 
 #services
 {
-    background-color: deeppink;
+    margin-top:150px;
+    margin-bottom:120px;
 }
 
+#services img
+{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background-color:#D1EDFF;
+
+}
 
 
 
 /****************               CTA SECTION                 ****************/
-#CTA
+#cta
 {
     background-color: #FFC600;
     text-align:center;
+    /*margin-left:60px;
+    margin-right:60px;*/
+    margin-bottom: 120px;
+    padding-bottom:80px;
+    padding-top:80px;
+}
+
+#cta h2
+{
+    margin-bottom: 10px;
+}
+#cta form
+{
+
+    margin-top:30px;
+}
+
+#cta ::placeholder
+{  
+    color: #292E47;
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    
+}
+#cta input[type=text]
+{
+    margin-right:10px;
+    width:300px;
+    padding-left:40px;
+    
+
+}
+#cta-mail
+{
+    /* Yo lo he podido meter usando la propiedad background-image
+    Al input le pueden poner un background image con position left
+    */  
+    background-image: url('../images/newsletter/icon/mail.svg');
+    background-repeat: no-repeat;
+    background-position:12px 12px;
+    background-size: 20px;
+}
+/****************               FOOTER                 ****************/
+footer
+{
+
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-left:120px;
+    margin-right:120px;
+    font-size:12px;
+}
+
+#left-footer img
+{
+    width:100px;
+    margin-bottom: 15px;
+    
+}
+
+#right-footer
+{
+    width:430px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 40px 0px; 
+
+    
+}
+
+address
+{
+    font-style:normal;
+}
+
+
+/************************ SECOND PAGE PROJECT.HTML************************/
+#main-project h1
+{
+    margin-top:100px;
+}
+
+#other-projects
+{
+    margin-bottom:120px;
+    margin-top:80px;
+}
+
+#subtitle-date
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-bottom: 30px;
+    font-size:14px;
+}
+
+#main-project img
+{
+    width:100%;
+    height:400px;
+    box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
+    margin-bottom:70px;
+}
+
+#main-project p
+{
+    font-size:16px;
+}
+
+/************************ THIRD PAGE CONTACT.HTML************************/
+#contact-us
+{
+    margin-top:80px;
+}
+
+#contact-us button
+{
+    width:100%;
+    margin-top: 20px;
+    margin-bottom: 140px;
+}
+
+#contact-us label
+{
+    background-color: #FFC600;
+    margin: 30px 0px;
+
+}
+
+#mail-phone
+{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.label100
+{
+    width:100%;
+}
+
+
+#contact-us input,  textarea
+{
+    background-color: rgba(107, 112, 141, 0.1);
 }
 
 
 
-/****************               FOOTER                 ****************/
-footer
+#contact-us input[type="text"], input[type="email"],input[type="tel"]
 {
-    background-color:olive
+    width:100%;
+}
+textarea
+{
+    resize: none;
+    border:none;
+
+}
+
+textarea span
+{
+    color:yellow;
 }
