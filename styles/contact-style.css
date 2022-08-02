@@ -1,0 +1,102 @@
+/*
+
+            MARIONA BATALLA TAYLOR
+            mariona.batalla.taylor@gmail.com
+            IronHack - FrontEnd Bootcamp
+            MID TERM PROJECT
+            July -August 2022
+
+
+            Colors:
+            -------
+
+            BLUES: #072AC8      #43D2FF     #A2D6F9     #D1EDFF
+            GRAYS: #292E47      #6B708D     #F2F4FC     #ECF7FF
+            YELLOW: #FFC600 
+
+*/
+
+/************************ THIRD PAGE CONTACT.HTML************************/
+#contact-us
+{
+    margin-top:80px;
+}
+
+#contact-us button
+{
+    width:100%;
+    margin-top: 20px;
+    margin-bottom: 140px;
+}
+
+#contact-us label
+{
+    margin: 30px 0px;
+
+}
+
+#mail-phone
+{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.label100
+{
+    width:100%;
+}
+
+
+#contact-us input,  textarea
+{
+    background-color: rgba(107, 112, 141, 0.1);
+    margin-top:10px;
+    margin-bottom:30px;
+}
+
+#contact-us input[type="text"], input[type="email"],input[type="tel"]
+{
+    width:100%;
+}
+
+textarea
+{
+    resize: none;
+    border:none;
+    width:100%;
+    color: tomato;
+    padding: 15px;
+
+}
+
+#contact-mail, #contact-phone
+{
+    width:49%
+}
+
+/************************************************************************* 
+                         MEDIA QUERIES 
+*************************************************************************/
+
+/* Small devices (landscape phones, 576px and above till next break point)*/
+@media (max-width:767px) /* MOBILE*/
+{ 
+    
+   body
+   {
+        background-color:yellow;
+   }
+}
+
+/* Medium devices (tablets, 768px and above till next break point)*/
+@media (min-width: 768px) and (max-width: 1024px)/* TABLET */
+
+{ 
+    body
+    {
+        background-color: tomato;
+    }
+   
+
+}
