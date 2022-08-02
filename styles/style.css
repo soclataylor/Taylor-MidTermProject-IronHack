@@ -21,9 +21,6 @@
 /*  we first import the font    */
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
 
-/* we import font-awesome to be able to add an icon as a placeholder at the form */
-@import url("//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css");
-
 
 * /* all elements*/
 {
@@ -470,8 +467,6 @@ blockquote
 {
     background-color: #FFC600;
     text-align:center;
-    /*margin-left:60px;
-    margin-right:60px;*/
     margin-bottom: 120px;
     padding-bottom:80px;
     padding-top:80px;
@@ -503,14 +498,13 @@ blockquote
 }
 #cta-mail
 {
-    /* Yo lo he podido meter usando la propiedad background-image
-    Al input le pueden poner un background image con position left
-    */  
+
     background-image: url('../images/newsletter/icon/mail.svg');
     background-repeat: no-repeat;
     background-position:12px 12px;
     background-size: 20px;
 }
+
 /****************               FOOTER                 ****************/
 footer
 {
@@ -596,7 +590,6 @@ address
 
 #contact-us label
 {
-    background-color: #FFC600;
     margin: 30px 0px;
 
 }
@@ -617,22 +610,27 @@ address
 #contact-us input,  textarea
 {
     background-color: rgba(107, 112, 141, 0.1);
+    margin-top:10px;
+    margin-bottom:30px;
 }
-
-
 
 #contact-us input[type="text"], input[type="email"],input[type="tel"]
 {
     width:100%;
 }
+
 textarea
 {
     resize: none;
     border:none;
+    width:100%;
+    color: tomato;
+    padding: 15px;
 
 }
 
-textarea span
+#contact-mail, #contact-phone
 {
-    color:yellow;
+    width:49%
 }
+
