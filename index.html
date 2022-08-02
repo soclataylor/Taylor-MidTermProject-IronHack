@@ -3,7 +3,7 @@
             mariona.batalla.taylor@gmail.com
             IronHack - FrontEnd Bootcamp
             MID TERM PROJECT
-            July 2022
+            July -August 2022
 
             Notes for me:
             1 - You’ll also have to create a few interactions with the DOM, 
@@ -24,8 +24,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Taylor Web Design</title>
-        <!--linking the external stylesheet-->
+        <!--general stylesheet-->
         <link rel="stylesheet" type="text/css" href="styles/style.css" />
+        <!--styles for index page-->
+        <link rel="stylesheet" type="text/css" href="styles/index-style.css" />
+
   </head>
 
   <body>
@@ -87,6 +90,51 @@
 
             <div class="cards-container">
 
+
+                <!--
+
+                    Yo lo que os propongo que hagáis es que investiguéis lo que son las queryParams 
+                    para poder enviar información en la URL. De esta forma, para añadir esa variedad 
+                    y que no salga todo el rato el mismo contenido, enviar por queryParams el titulo 
+                    y el subtitulo del proyecto seleccionado y listo
+
+                    Y el cuerpo de la descripción del proyecto lo dejáis siempre el mismo y listo
+
+                    Investigad lo de las Query Params, que mola mucho y no es muy muy complicado
+
+                    Según lo que he visto, si en la URL a la que queréis iros para mostrar la 
+                    projectPage.html, al final de la URL ponéis ? y luego ponéis las diferentes 
+                    properties como si de un objeto se tratase, separadas por &, loq ue tenéis 
+                    que usar para recoger dichos valores en el JS de projectPage, es lo siguiente:
+
+                    var params = new Proxy(new URLSearchParams(window.location.search), {
+                    get: (searchParams, prop) => searchParams.get(prop),
+                    });
+
+                    De esta forma, si luego accedéis al objeto params con el nombre de la property 
+                    que habéis pasado, pues accedéis a su valor.
+                    Por ejemplo: supongamos que yo tengo la URL 127.0.0.1:5500/projectPage.html. 
+                    Yo lo que quiero es pasarle como queryParams el title y subtitle del proyecto 
+                    al que haga click. Por tanto, lo que tengo que hacer es lo siguiente:
+
+                    window.location.href = '/projectPage.html?title=MI título maravilloso&subtitle=Mi subtitulo fantástico'
+
+                    De esta forma, cuando entre a mi página projectPage.html y se ejecute mi código JS 
+                    podré obtener las queryParams con lo que os he puesto antes:
+
+                    var params = new Proxy(new URLSearchParams(window.location.search), {
+                    get: (searchParams, prop) => searchParams.get(prop),
+                    });
+
+                    Y para poder obtener los valores que le he pasado, tendría que hacer:
+
+                    const projectTitle = params.title;
+                    const projectSubtitle = params.subtitle;
+
+                    Y por último, meter esos valores en mi HTML para mostrarlos Y LISTO
+
+
+                -->
                     <div id="project1" class="card">
                         <img src="images/projects-section/1.jpg" alt="project simplify">
 
@@ -120,7 +168,7 @@
 
                     </div><!--end of project 3-->
            
-            </div><!-- enf of project cards-->
+            </div><!-- enf of cards container-->
 
         </section><!--end of projects section-->
 
