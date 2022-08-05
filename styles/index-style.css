@@ -18,18 +18,6 @@
 
 /************************ INDEX.HTML************************/
 
-#see-work
-{
-    margin-left:1.4%;/*20px;/****** MAKE RESPONSIVE *******/
-}
-
-#see-work a
-{
-
-    color:#6B708D;
-    font-weight: 500;
-
-}
 
 /****************               HERO SECTION                 ****************/
 #hero
@@ -41,8 +29,6 @@
     /*align-items:baseline;*/
     margin-top:80px;
     margin-bottom: 100px;
-
-
     
 }
 
@@ -61,13 +47,23 @@
     line-height: 20px;
 }
 
+#see-work
+{
+    margin-left:1.4%;/*20px;/****** MAKE RESPONSIVE *******/
+}
+
+#see-work a
+{
+
+    color:#6B708D;
+    font-weight: 500;
+}
+
 #right-hero
 {
     position:relative;
     top:0;
     left:0;
-    
-
 
 }
 
@@ -193,9 +189,6 @@
     position:relative;
     top:0;
     left:0;
-    
-
-    
 }
 
 #testimonial h2
@@ -204,9 +197,8 @@
     padding-top:80px;
     font-weight: 700;
     padding-bottom:50px;
-
-
 }
+
 blockquote
 {
     color: #FFC600;
@@ -281,9 +273,6 @@ blockquote
     color:#A2D6F9;
     font-size: 12px;
     font-weight:400;
-
-
-
 }
 
 #booking-kristin
@@ -316,41 +305,155 @@ blockquote
 
 
 
+/************************************************************************************************************************ 
+                                            MEDIA QUERIES 
+*************************************************************************************************************************/
 
-/************************************************************************* 
-                         MEDIA QUERIES 
-*************************************************************************/
 
 /* Small devices (landscape phones, 576px and above till next break point)*/
 /* MOBILE*/
 @media (max-width:767px) 
 { 
     
+    h2
+    {
+        text-align: center;
+        margin-top:80px;
+    }
     #hero
     {
         display:flex;
         flex-direction:row-reverse; /* from right to left */
         flex-wrap:wrap-reverse; /* to fit it all in the necessary lines */
         justify-content:center; /* same space leftitem-leftmargin and rightitem-rightmargin */
-        
+        margin-top:30px;
+        margin-bottom: 30px;
     }
+
+    #left-hero
+    {
+
+        padding-top:80px;
+        padding-left:7%;
+        width:100%;
+        text-align: center;
+    }
+
+    #right-hero
+    {
+        width:100%;
+        padding-left:7%;
+    }
+
+    #right-hero img
+    {
+       
+    }
+
 
     #client
     {
 
-        /*display:flex;
-        flex-direction: row;*/
         justify-content: space-evenly;
         flex-wrap:wrap;
         align-items:center;
-        /*margin-top:140px;
-        margin-bottom:130px;*/
+        margin-top:0px;
+        margin-bottom:30px;
     }
 
     .image-client
     {
         width: 20%;
         margin:5%;
+    }
+
+    #projects
+    {
+        margin-bottom: 30px;
+    }
+
+            /*************************   CARDS  (projects and services sections) ********************************/
+            .cards-container
+            {
+                display:flex;
+                flex-direction: row;
+                flex-wrap:wrap;
+                row-gap:15px;
+                justify-content:space-between;
+                
+            }
+    
+            .card
+            {
+                width:100%;
+                text-align: center;
+            }
+    
+            .card img
+            {
+                width:100%;
+            }
+    
+            /*************************   EOCARDS ********************************/
+
+    #services
+    {
+        margin-top:30px;
+        margin-bottom:30px;
+    }   
+
+    .emoji-image
+    {
+        width:80px;
+        height:80px;
+    }
+
+    #emoji1
+    {
+        position:absolute;
+        top:5%;
+        left:2%;
+    }
+
+    #emoji2
+    {
+        position:absolute;
+        top:5%;
+        right:2%;
+    }
+
+    #emoji3
+    {
+        position:absolute;
+        bottom:5%;
+        left:2%;
+    }
+
+
+    #emoji4
+    {
+        position:absolute;
+        bottom:5%;
+        right:2%;
+    }
+
+    #testimonial h2
+    {
+        padding-top:60px;
+        padding-bottom:15px;
+    }
+
+    #kristin
+    {
+
+        margin-top:20px;
+        padding-bottom:30px;
+        height:50px;
+    }
+    
+    #cta h2
+    {
+        margin-top:20px;
     }
 
 }
