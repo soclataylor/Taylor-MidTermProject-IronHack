@@ -39,7 +39,7 @@
 
 #main-project img
 {
-    width:100%;
+    width:100%;/****** MAKE RESPONSIVE *******/
     height:400px;
     box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
     margin-bottom:70px;
@@ -55,23 +55,19 @@
 *************************************************************************/
 
 /* Small devices (landscape phones, 576px and above till next break point)*/
-@media (max-width:767px) /* MOBILE*/
+/* MOBILE*/
+@media (max-width:767px) 
 { 
     
-   body
-   {
-        background-color:yellow;
-   }
+
 }
 
 /* Medium devices (tablets, 768px and above till next break point)*/
-@media (min-width: 768px) and (max-width: 1024px)/* TABLET */
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1024px)
 
 { 
-    body
-    {
-        background-color: tomato;
-    }
+
    
 
 }

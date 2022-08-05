@@ -20,7 +20,7 @@
 
 #see-work
 {
-    margin-left:20px;
+    margin-left:1.4%;/*20px;/****** MAKE RESPONSIVE *******/
 }
 
 #see-work a
@@ -49,8 +49,8 @@
 #left-hero
 {
     padding-top:100px;
-    width: 340px;
-    margin-right:100px;
+    width: 24%;/*340px;/****** MAKE RESPONSIVE *******/
+    margin-right:7%;/*100px;/****** MAKE RESPONSIVE *******/
 
 }
 
@@ -66,13 +66,14 @@
     position:relative;
     top:0;
     left:0;
+    
 
 
 }
 
 #image1
 {
-    width:500px;
+    width:500px;/****** MAKE RESPONSIVE *******/
     height:auto;
     position:relative; /*the background image as relative position*/
     top:0;
@@ -84,9 +85,9 @@
 #image2
 {
     position:absolute;
-    left:-60px;
+    left:-60px;/****** MAKE RESPONSIVE *******/
     top:-10px;
-    width:300px;
+    width:300px;/****** MAKE RESPONSIVE *******/
     height:auto;
 
 
@@ -95,9 +96,9 @@
 #image3
 {
     position:absolute;
-    right:-50px;
+    right:-50px;/****** MAKE RESPONSIVE *******/
     bottom:-100px;
-    width:300px;
+    width:300px;/****** MAKE RESPONSIVE *******/
     height:auto;
 
 
@@ -140,31 +141,31 @@
 
         .card
         {
-            width:290px;
+            width:290px;/****** MAKE RESPONSIVE *******/
             background-color:white;
             box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
         }
 
         .card img
         {
-            width:290px;
+            width:290px;/****** MAKE RESPONSIVE *******/
             height:200px;
         }
 
         .text-card
         {
-            padding:25px;
+            padding:25px;/****** MAKE RESPONSIVE *******/
 
         }
         .text-card p, a
         {
-            font-size:14px;
+            font-size:14px;/****** MAKE RESPONSIVE *******/
         }
 
         .text-card p
         {
             margin-bottom:40px;
-            line-height:25px;
+            line-height:25px;/****** MAKE RESPONSIVE *******/
         }
 
         .text-card img
@@ -216,37 +217,37 @@ blockquote
 
 .emoji-image
 {
-    width:100px;
+    width:100px;/****** MAKE RESPONSIVE *******/
     height:100px;
 }
 
 #emoji1
 {
     position:absolute;
-    top:45px;
-    left:45px;
+    top:45px;/****** MAKE RESPONSIVE *******/
+    left:45px;/****** MAKE RESPONSIVE *******/
 }
 
 #emoji2
 {
     position:absolute;
-    top:45px;
-    right:45px;
+    top:45px;/****** MAKE RESPONSIVE *******/
+    right:45px;/****** MAKE RESPONSIVE *******/
 }
 
 #emoji3
 {
     position:absolute;
-    bottom:45px;
-    left:45px;
+    bottom:45px;/****** MAKE RESPONSIVE *******/
+    left:45px;/****** MAKE RESPONSIVE *******/
 }
 
 
 #emoji4
 {
     position:absolute;
-    bottom:45px;
-    right:45px;
+    bottom:45px;/****** MAKE RESPONSIVE *******/
+    right:45px;/****** MAKE RESPONSIVE *******/
 }
 
 #kristin
@@ -263,10 +264,10 @@ blockquote
 
 #kristin img
 {
-    width:45px;
+    width:45px;/****** MAKE RESPONSIVE *******/
     height:45px;
     border-radius:50%;
-    margin-right:8px;
+    margin-right:8px;/****** MAKE RESPONSIVE *******/
 }
 
 #kristin p
@@ -305,7 +306,7 @@ blockquote
 
 #services img
 {
-    width:50px;
+    width:50px;/****** MAKE RESPONSIVE *******/
     height:50px;
     border-radius:50%;
     background-color:#D1EDFF;
@@ -314,83 +315,6 @@ blockquote
 
 
 
-/****************               CTA SECTION                 ****************/
-#cta
-{
-    background-color: #FFC600;
-    text-align:center;
-    margin-bottom: 120px;
-    padding-bottom:80px;
-    padding-top:80px;
-}
-
-#cta h2
-{
-    margin-bottom: 10px;
-}
-#cta form
-{
-
-    margin-top:30px;
-}
-
-#cta ::placeholder
-{  
-    color: #292E47;
-    text-shadow: 0px 2px 2px rgba(0,0,0,0.2);
-    
-}
-#cta input[type=text]
-{
-    margin-right:10px;
-    width:300px;
-    padding-left:40px;
-    
-
-}
-#cta-mail
-{
-
-    background-image: url('../images/newsletter/icon/mail.svg');
-    background-repeat: no-repeat;
-    background-position:12px 12px;
-    background-size: 20px;
-}
-
-/****************               FOOTER                 ****************/
-footer
-{
-
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    margin-left:120px;
-    margin-right:120px;
-    font-size:12px;
-}
-
-#left-footer img
-{
-    width:100px;
-    margin-bottom: 15px;
-    
-}
-
-#right-footer
-{
-    width:430px;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 40px 0px; 
-
-    
-}
-
-address
-{
-    font-style:normal;
-}
 
 
 /************************************************************************* 
@@ -398,25 +322,45 @@ address
 *************************************************************************/
 
 /* Small devices (landscape phones, 576px and above till next break point)*/
-@media (max-width:767px) /* MOBILE*/
+/* MOBILE*/
+@media (max-width:767px) 
 { 
     
-   body
-   {
-        background-color:yellow;
-   }
+    #hero
+    {
+        display:flex;
+        flex-direction:row-reverse; /* from right to left */
+        flex-wrap:wrap-reverse; /* to fit it all in the necessary lines */
+        justify-content:center; /* same space leftitem-leftmargin and rightitem-rightmargin */
+        
+    }
 
-   
+    #client
+    {
+
+        /*display:flex;
+        flex-direction: row;*/
+        justify-content: space-evenly;
+        flex-wrap:wrap;
+        align-items:center;
+        /*margin-top:140px;
+        margin-bottom:130px;*/
+    }
+
+    .image-client
+    {
+        width: 20%;
+        margin:5%;
+    }
+
 }
 
+
 /* Medium devices (tablets, 768px and above till next break point)*/
-@media (min-width: 768px) and (max-width: 1024px)/* TABLET */
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1024px)
 
 { 
-    body
-    {
-        background-color: tomato;
-    }
-   
+
 
 }

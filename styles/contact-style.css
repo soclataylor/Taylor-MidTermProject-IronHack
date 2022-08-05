@@ -24,14 +24,14 @@
 
 #contact-us button
 {
-    width:100%;
+    width:100%;/****** MAKE RESPONSIVE *******/
     margin-top: 20px;
     margin-bottom: 140px;
 }
 
 #contact-us label
 {
-    margin: 30px 0px;
+    margin: 30px 0px;/****** MAKE RESPONSIVE *******/
 
 }
 
@@ -80,23 +80,19 @@ textarea
 *************************************************************************/
 
 /* Small devices (landscape phones, 576px and above till next break point)*/
-@media (max-width:767px) /* MOBILE*/
+/* MOBILE*/
+@media (max-width:767px) 
 { 
     
-   body
-   {
-        background-color:yellow;
-   }
+
 }
 
 /* Medium devices (tablets, 768px and above till next break point)*/
-@media (min-width: 768px) and (max-width: 1024px)/* TABLET */
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1024px)
 
 { 
-    body
-    {
-        background-color: tomato;
-    }
+
    
 
 }

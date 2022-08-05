@@ -35,13 +35,13 @@ body
 {
     background-color: #F2F4FC;
     color:#514D67;
-    /*margin: 60px;*/
     margin-top:60px;
     margin-bottom:60px;
-    padding-left:60px;
-    padding-right:60px;
+    padding-left:4%; /*60px; /****** MAKE RESPONSIVE *******/
+    padding-right:4%;/*60px; /****** MAKE RESPONSIVE *******/
     font-weight:400;
-    size:18px;
+    size:18px; /****** MAKE RESPONSIVE *******/
+    width:100vw;
 }
 
 h1, h2
@@ -52,7 +52,7 @@ h1, h2
 h1
 {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 40px; /****** MAKE RESPONSIVE *******/
     margin-bottom:30px;
 
 }
@@ -76,7 +76,7 @@ input[type=text], input[type="email"],input[type="tel"]
 {
     box-sizing: border-box; /*so the width contains the padding*/
     height:45px;
-    padding:15px;
+    padding:1%;/*15px; /****** MAKE RESPONSIVE *******/
     border:none;
 }
 
@@ -87,8 +87,8 @@ a:visited
 
 .general-margins
 {
-    margin-left:140px;
-    margin-right:140px;
+    margin-left:5%;/*140px; /****** MAKE RESPONSIVE *******/
+    margin-right:5%;/*140px; /****** MAKE RESPONSIVE *******/
 }
 
 /****************               NAV BAR                 ****************/
@@ -99,14 +99,13 @@ nav
     flex-wrap:nowrap; /* to fit it all in the same line */
     justify-content:space-between; /* same space leftitem-leftmargin and rightitem-rightmargin */
     align-items:center;
-
-
 }
 
 #logo-nav
 {
-    width: 70px;
+    width: 12%/*70px; /****** MAKE RESPONSIVE *******/
 }
+
 ul {
 
 	list-style-type: none; /*remove the markers */
@@ -123,11 +122,11 @@ li {
 li a /* links inside the list */ 
 {
 	/*padding: 30px;*/
-    margin:0px 30px;;
+    margin:0px 30px;/*margin:0px 30px; /****** MAKE RESPONSIVE *******/
 	text-align: center;
 	display: block; /* so it behaves like a block*/
 	color:#514D67;
-    font-size:14px;
+    font-size:14px; /****** MAKE RESPONSIVE *******/
 }
 
 li a:hover 
@@ -144,18 +143,16 @@ li a:hover
 button
 {
 
-    padding:15px 25px;
+    padding:15px 25px; /****** MAKE RESPONSIVE *******/
     border:none;
     text-align:center;
-
-
 }
 
 button a
 {
     text-decoration:none;
     color:white;
-    font-size: 12px;
+    font-size: 12px; /****** MAKE RESPONSIVE *******/
 }
 
 .blue-button
@@ -166,21 +163,117 @@ button a
 
 }
 
+/****************               CTA SECTION                 ****************/
+#cta
+{
+    background-color: #FFC600;
+    text-align:center;
+    margin-bottom: 120px;
+    padding-bottom:80px;
+    padding-top:80px;
+}
+
+#cta h2
+{
+    margin-bottom: 10px;
+}
+#cta form
+{
+
+    margin-top:30px;
+}
+
+#cta ::placeholder
+{  
+    color: #292E47;
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    
+}
+#cta input[type=text]
+{
+    margin-right:10px;/****** MAKE RESPONSIVE *******/
+    width:300px;
+    padding-left:40px;/****** MAKE RESPONSIVE *******/
+    
+
+}
+#cta-mail
+{
+
+    background-image: url('../images/newsletter/icon/mail.svg');
+    background-repeat: no-repeat;
+    background-position:12px 12px;
+    background-size: 20px;
+}
+
+/****************               FOOTER                 ****************/
+footer
+{
+
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-left:120px;/****** MAKE RESPONSIVE *******/
+    margin-right:120px;/****** MAKE RESPONSIVE *******/
+    font-size:12px;
+}
+
+#left-footer img
+{
+    width:100px;/****** MAKE RESPONSIVE *******/
+    margin-bottom: 15px;
+    
+}
+
+#right-footer
+{
+    width:430px;/****** MAKE RESPONSIVE *******/
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 40px 0px; 
+
+    
+}
+
+address
+{
+    font-style:normal;
+}
+
+
 /************************************************************************* 
                          MEDIA QUERIES 
 *************************************************************************/
 
 /* Small devices (landscape phones, 576px and above till next break point)*/
-@media (max-width:767px) /* MOBILE*/
+/* MOBILE */
+@media (max-width:767px) 
 { 
     
    body
    {
         background-color:yellow;
+
+        /* THINGS TO MODIFY:
+        margin-top:60px;
+        margin-bottom:60px;
+        padding-left:60px;
+        padding-right:60px;
+        font-weight:400;
+        size:18px;*/
    }
+
+    .general-margins
+    {
+        margin:0;
+    }
+  
+   
 }
 
 /* Medium devices (tablets, 768px and above till next break point)*/
+/* TABLET */
 @media (min-width: 768px) and (max-width: 1024px)/* TABLET */
 
 { 
