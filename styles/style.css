@@ -218,8 +218,8 @@ footer
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    margin-left:120px;/****** MAKE RESPONSIVE *******/
-    margin-right:120px;/****** MAKE RESPONSIVE *******/
+    /*margin-left:120px;/****** MAKE RESPONSIVE *******/
+    /*margin-right:120px;/****** MAKE RESPONSIVE *******/
     font-size:12px;
 }
 
@@ -257,7 +257,7 @@ address
     
    body
    {
-        /*background-color:yellow;*/
+        background-color:yellow;
 
         margin-top:5%;
         margin-bottom:5%;
@@ -280,6 +280,7 @@ address
         margin-bottom: 10%;
         padding-bottom:8%;
         padding-top:8%;
+        background-color:aqua;
     }
 
   
@@ -293,6 +294,7 @@ address
         margin-left:0px;/****** MAKE RESPONSIVE *******/
         margin-right:0px;/****** MAKE RESPONSIVE *******/
         font-size:12px;
+        background-color:blueviolet;
     }
 
     #left-footer img
@@ -316,6 +318,30 @@ address
         grid-template-rows: 1fr 1fr 1fr; 
         gap: 15px 0px; 
         margin-left:20%;
+    }
+
+    #hero
+    {
+        background-color:fuchsia;
+    }
+
+    #client
+    {
+        background-color:darkorange;
+    }
+    #services
+    {
+        background-color:chartreuse;
+    }
+
+    #testimonial
+    {
+        background-color:crimson;
+    }
+
+    #projects
+    {
+        background-color:deeppink;
     }
    
 }
