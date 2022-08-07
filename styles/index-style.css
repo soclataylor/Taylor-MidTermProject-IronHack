@@ -318,8 +318,11 @@ blockquote
         text-align: center;
         margin-top:80px;
     }
+
     #hero
     {
+        background-color:aquamarine;
+        width:100%;
         display:flex;
         flex-direction:row-reverse; /* from right to left */
         flex-wrap:wrap-reverse; /* to fit it all in the necessary lines */
@@ -330,19 +333,18 @@ blockquote
 
     #left-hero
     {
-
         padding-top:80px;
         padding-left:7%;
         width:100%;
         text-align:center;
-        background-color:deeppink;
+
     }
 
     #right-hero
     {
         width:100%;
         padding-left:7%;
-        background-color:darkorange;
+
         text-align:center;
     }
 
@@ -376,16 +378,17 @@ blockquote
     }
 
 
-
     #client
     {
-
         justify-content: space-evenly;
         flex-wrap:wrap;
         align-items:center;
         margin-top:0px;
-        margin-bottom:30px;
+        margin-bottom:3px;
+        background-color:blueviolet;
+        width:100%;
     }
+
 
     .image-client
     {
@@ -395,7 +398,9 @@ blockquote
 
     #projects
     {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        background-color:coral;
+        width:100%;
     }
 
             /*************************   CARDS  (projects and services sections) ********************************/
@@ -424,9 +429,13 @@ blockquote
 
     #services
     {
-        margin-top:30px;
+        margin-top:0px;
         margin-bottom:30px;
+        background-color:hotpink;
+        width:100%;
     }   
+
+       
 
     .emoji-image
     {
@@ -461,6 +470,12 @@ blockquote
         position:absolute;
         bottom:5%;
         right:2%;
+    }
+
+    #testimonial
+    {
+        background-color:darkmagenta;
+        width:100%;
     }
 
     #testimonial h2
