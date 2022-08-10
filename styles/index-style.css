@@ -28,7 +28,6 @@
     justify-content:space-between; 
     margin-top:80px;
     margin-bottom: 100px;
-    
 }
 
 #left-hero
@@ -52,7 +51,6 @@
 
 #see-work a
 {
-
     color:#6B708D;
     font-weight: 500;
 }
@@ -63,9 +61,7 @@
     position:relative;
     top:0;
     left:0;
-
     width:50%;
-
 }
 
 #image1
@@ -76,7 +72,6 @@
     top:0;
     left:0;
     opacity: 0.7;
-
 }
 
 
@@ -92,8 +87,8 @@
 #image3
 {
     position:absolute;
-    right:-15%;
-    bottom:-18%;
+    left:55%;
+    top:65%;
     width:60%;
     height:auto;
 }
@@ -120,14 +115,11 @@
 {
     margin-bottom: 150px;
 }
-
-
-        
+   
 
 /****************               TESTIMONIAL SECTION                 ****************/
 #testimonial
-{
-    
+{  
     text-align:center;
     background-image:url("../images/testimonial-section/orbit.png");
     background-position:0 0;
@@ -157,37 +149,37 @@ blockquote
 
 .emoji-image
 {
-    width:100px;/****** MAKE RESPONSIVE *******/
+    width:100px;
     height:100px;
 }
 
 #emoji1
 {
     position:absolute;
-    top:45px;/****** MAKE RESPONSIVE *******/
-    left:45px;/****** MAKE RESPONSIVE *******/
+    top:45px;
+    left:45px;
 }
 
 #emoji2
 {
     position:absolute;
-    top:45px;/****** MAKE RESPONSIVE *******/
-    right:45px;/****** MAKE RESPONSIVE *******/
+    top:45px;
+    right:45px;
 }
 
 #emoji3
 {
     position:absolute;
-    bottom:45px;/****** MAKE RESPONSIVE *******/
-    left:45px;/****** MAKE RESPONSIVE *******/
+    bottom:45px;
+    left:45px;
 }
 
 
 #emoji4
 {
     position:absolute;
-    bottom:45px;/****** MAKE RESPONSIVE *******/
-    right:45px;/****** MAKE RESPONSIVE *******/
+    bottom:45px;
+    right:45px;
 }
 
 #kristin
@@ -203,10 +195,10 @@ blockquote
 
 #kristin img
 {
-    width:45px;/****** MAKE RESPONSIVE *******/
+    width:45px;
     height:45px;
     border-radius:50%;
-    margin-right:8px;/****** MAKE RESPONSIVE *******/
+    margin-right:8px;
 }
 
 #kristin p
@@ -241,11 +233,9 @@ blockquote
 {
     width:20%;
     height:auto;
-    
     background-color:#D1EDFF;
     padding:1%;
     border-radius:50%;
-
 }
 
 
@@ -273,25 +263,21 @@ blockquote
         display:flex;
         flex-direction:row-reverse; /* from right to left */
         flex-wrap:wrap-reverse; /* to fit it all in the necessary lines */
-        justify-content:center; /* same space leftitem-leftmargin and rightitem-rightmargin */
-        margin-top:2%;
-        margin-bottom: 5%;
+        margin-top:5%;
+        margin-bottom: 10%;
     }
 
     #left-hero
     {
         padding-top:10%;
-        padding-left:7%;
         width:100%;
         text-align:center;
-
     }
 
     #right-hero
     {
         width:100%;
         padding-left:7%;
-
         text-align:center;
     }
 
@@ -332,7 +318,7 @@ blockquote
         align-items:center;
         margin-top:0;
         margin-bottom:0;
-        width:100%;
+
     }
 
 
@@ -342,12 +328,7 @@ blockquote
         margin:5%;
     }
 
-    #projects
-    {
-        /*margin-bottom: 20px;
-        margin-top:10%;*/
-        width:100%;
-    }
+ 
 
             /*************************   CARDS  (projects and services sections) ********************************/
             .cards-container
@@ -357,7 +338,6 @@ blockquote
                 flex-wrap:wrap;
                 row-gap:15px;
                 justify-content:space-between;
-                
             }
     
             .card
@@ -375,17 +355,15 @@ blockquote
 
     #services
     {
-        margin-top:0px;
-        margin-bottom:30px;
-        width:100%;
+        margin-top:-7%;
+        margin-bottom:5%;
     }   
-
-       
+   
 
     .emoji-image
     {
-        width:80px;
-        height:80px;
+        width:10%;
+        height:auto;
     }
 
     #emoji1
@@ -419,7 +397,8 @@ blockquote
 
     #testimonial
     {
-        width:100%;
+        margin-top:-18%;
+        margin-bottom:0;
     }
 
     #testimonial h2
@@ -449,6 +428,25 @@ blockquote
 @media (min-width: 768px) and (max-width: 1024px)
 
 { 
+    /* the only thing that has to be fixed is the hero section*/
+
+    #hero
+    {
+        margin-bottom: 60px;
+    }
+
+    #left-hero
+    {
+        padding-top:100px;
+        width: 40%;
+    }
+
+
+    #right-hero
+    {
+        width:60%;
+        padding-top:30px;
+    }
 
 
 }

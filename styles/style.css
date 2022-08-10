@@ -28,7 +28,6 @@
     padding: 0;
     margin: 0;
     font-family: "Roboto";
-
 }
 
 body
@@ -38,7 +37,7 @@ body
     margin-top:60px;
     margin-bottom:60px;
     font-weight:400;
-    size:18px; /****** MAKE RESPONSIVE *******/
+    size:18px;
     width:93%;
     margin-right:auto;
     margin-left:auto;
@@ -53,7 +52,7 @@ h1, h2
 h1
 {
     font-weight: 700;
-    font-size: 40px; /****** MAKE RESPONSIVE *******/
+    font-size: 40px;
     margin-bottom:30px;
 
 }
@@ -109,7 +108,8 @@ nav
     width: 8%;
 }
 
-ul {
+ul 
+{
 
 	list-style-type: none; /*remove the markers */
 	margin: 0;
@@ -117,24 +117,22 @@ ul {
 	overflow: hidden;
 }
 
-li {
-	/*per posicionar cada enllaç a la mateixa línia (de cantó)*/
+li  /************************************************* MAKE FLEX*/
+{
 	float: left;
 }
 
 li a /* links inside the list */ 
 {
-	/*padding: 30px;*/
-    margin:0px 30px;/*margin:0px 30px; /****** MAKE RESPONSIVE *******/
+    margin:0px 30px;
 	text-align: center;
 	display: block; /* so it behaves like a block*/
 	color:#514D67;
-    font-size:14px; /****** MAKE RESPONSIVE *******/
+    font-size:14px;
 }
 
 li a:hover 
 {
-	/*quan passem per sobre dels enllaços que formen part d'un li*/
 	color:#072AC8;
 }
 
@@ -150,8 +148,7 @@ a.active
 
 button
 {
-
-    padding:15px 25px; /****** MAKE RESPONSIVE *******/
+    padding:15px 25px;
     border:none;
     text-align:center;
 }
@@ -168,15 +165,12 @@ button a
     background-color:#072AC8;
     color:white;
     font-weight: 500;
-
 }
 
 button:hover
 {
     background-color:#FFC600;
     color:black;
-
-
 }
 
 #cta button:hover
@@ -191,13 +185,11 @@ button:hover
     display:flex;
     flex-direction: row;
     justify-content:space-between;
-
-    
 }
 
 .card
 {
-    width:30%;
+    width:27%;
     background-color:white;
     box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
 }
@@ -205,23 +197,24 @@ button:hover
 .card img
 {
     width:100%;
-    height:250px;
+    height:210px;
+    object-fit:cover;
 }
 
 .text-card
 {
-    padding:25px;/****** MAKE RESPONSIVE *******/
+    padding:25px;
 
 }
-.text-card p, a
+.text-card p, .text-card a
 {
-    font-size:14px;/****** MAKE RESPONSIVE *******/
+    font-size:14px;
 }
 
 .text-card p
 {
     margin-bottom:40px;
-    line-height:25px;/****** MAKE RESPONSIVE *******/
+    line-height:25px;
 }
 
 .text-card img
@@ -264,15 +257,11 @@ button:hover
 }
 #cta input[type=text]
 {
-    /*margin-right:5%;/****** MAKE RESPONSIVE *******/
-    width:300px;
-    padding-left:40px;/****** MAKE RESPONSIVE *******/
-    
-
+    width:25%;
+    padding-left:40px;
 }
 #cta-mail
 {
-
     background-image: url('../images/newsletter/icon/mail.svg');
     background-repeat: no-repeat;
     background-position:12px 12px;
@@ -296,19 +285,17 @@ footer
 
 #left-footer img
 {
-    width:100px;/****** MAKE RESPONSIVE *******/
-    margin-bottom: 15px;
-    
+    width:20%;
+    margin-bottom: 15px; 
 }
 
 #right-footer
 {
-    width:430px;/****** MAKE RESPONSIVE *******/
+    width:70%;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr; 
-    gap: 40px 0px; 
-    
+    gap: 70% 20%;
 }
 
 #right-footer a
@@ -338,12 +325,9 @@ address
     
    body
    {
-        margin-top:5%;
-        margin-bottom:5%;
+        width:100%;
+        margin:0;
         padding:0;
-        margin-left:0px; /****WHY??*****/
-        margin-right:0px;/****WHY??*****/
-        
    }
 
    h1
@@ -351,10 +335,11 @@ address
         margin-bottom:5%;
    }
 
-   .container
+   .general-margins
    {
     width:100%;
-    
+    margin-left:0;
+    margin-right:0;
    }
 
     /****************               NAV BAR                 ****************/
@@ -362,23 +347,20 @@ address
 
     #middle-nav
     {
-        position:absolute;
+        position:fixed;
          /* WHEN CLICKING HAMBURGER IGON, THIS SHALL ANIMATE TO POSITION ITSELF TO THIS POSITION*/
         left:0;
         top:0;
-        width:25%;
-        padding-top:20%;
-        padding-left:10%;
+        width:100%;
+        padding-top:5%;
         background-color:#072AC8;
         z-index:5;
-
        
     }
 
     #logo-nav
     {
-        width: 12%;/*70px; /****** MAKE RESPONSIVE *******/
-        padding-left:45%;
+        width: 12%;
     }
 
     ul {
@@ -396,12 +378,11 @@ address
     
     li a /* links inside the list */ 
     {
-        /*padding: 30px;*/
-        margin:20% 20%;/*margin:0px 30px; /****** MAKE RESPONSIVE *******/
-        text-align: center;
+        margin:10% 20%;
+        text-align: left;
         display: block; /* so it behaves like a block*/
         color:white;
-        font-size:14px; /****** MAKE RESPONSIVE *******/
+        font-size:14px;
     }
 
     li a:hover 
@@ -430,8 +411,6 @@ address
         display:flex;
         flex-direction:column-reverse;
         align-items:center;
-        /*margin-left:0;/****** MAKE RESPONSIVE *******/
-        /*margin-right:0;/****** MAKE RESPONSIVE *******/
         font-size:12px;
     }
 
@@ -450,17 +429,17 @@ address
 
     #right-footer /*top position: reverse display in phone*/
     {
-        width:100%;
+ 
         display:grid;
         grid-template-columns: 1fr 1fr 1fr; 
         grid-template-rows: 1fr 1fr 1fr; 
         gap: 15px 0px; 
+        padding-left:8%;
     }
 
     #right-footer a:hover
     {
         color:#514D67;
-        background-color:deeppink;
     }
    
     
@@ -471,11 +450,22 @@ address
 @media (min-width: 768px) and (max-width: 1024px)/* TABLET */
 
 { 
-    body
+
+    footer
     {
-        background-color: tomato;
+        align-items:center;
     }
-   
+
+    #right-footer
+    {
+        width:100%;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 70% 10%;
+        margin-top:0px;
+    }
 
 }
+
 
