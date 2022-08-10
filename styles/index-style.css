@@ -23,10 +23,9 @@
 #hero
 {
     display:flex;
-    flex-direction:row; /* from left to right */
-    flex-wrap:nowrap; /* to fit it all in the same line */
-    justify-content:center; /* same space leftitem-leftmargin and rightitem-rightmargin */
-    /*align-items:baseline;*/
+    flex-direction:row;
+    flex-wrap:nowrap; 
+    justify-content:space-between; 
     margin-top:80px;
     margin-bottom: 100px;
     
@@ -35,9 +34,7 @@
 #left-hero
 {
     padding-top:100px;
-    width: 35%;
-    margin-right:7%;
-    padding-left:6%;
+    width: 33%;
 
 }
 
@@ -50,7 +47,7 @@
 
 #see-work
 {
-    margin-left:1.4%;/*20px;/****** MAKE RESPONSIVE *******/
+    margin-left:1.4%;
 }
 
 #see-work a
@@ -60,44 +57,45 @@
     font-weight: 500;
 }
 
+
 #right-hero
 {
     position:relative;
     top:0;
     left:0;
 
+    width:50%;
+
 }
 
 #image1
 {
-    width:500px;/****** MAKE RESPONSIVE *******/
+    width:100%;
     height:auto;
     position:relative; /*the background image as relative position*/
     top:0;
     left:0;
     opacity: 0.7;
+
 }
 
 
 #image2
 {
     position:absolute;
-    left:-60px;/****** MAKE RESPONSIVE *******/
-    top:-10px;
-    width:300px;/****** MAKE RESPONSIVE *******/
+    left:-9.5%;
+    top:-4%;
+    width:60%;
     height:auto;
-
-
 }
 
 #image3
 {
     position:absolute;
-    right:-50px;/****** MAKE RESPONSIVE *******/
-    bottom:-100px;
-    width:300px;/****** MAKE RESPONSIVE *******/
+    right:-15%;
+    bottom:-18%;
+    width:60%;
     height:auto;
-
 }
 
 
@@ -121,7 +119,6 @@
 #projects
 {
     margin-bottom: 150px;
-
 }
 
 
@@ -202,7 +199,6 @@ blockquote
     margin-top:60px;
     padding-bottom:70px;
     height:50px;
-
 }
 
 #kristin img
@@ -231,9 +227,6 @@ blockquote
     color:#F4F6FC;
     font-size:10px;
     font-weight: 400;
-
-
-
 }
 
 /****************               SERVICES SECTION                 ****************/
@@ -246,10 +239,12 @@ blockquote
 
 #services img
 {
-    width:50px;/****** MAKE RESPONSIVE *******/
-    height:50px;
-    border-radius:50%;
+    width:20%;
+    height:auto;
+    
     background-color:#D1EDFF;
+    padding:1%;
+    border-radius:50%;
 
 }
 

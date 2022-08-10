@@ -9,8 +9,6 @@
     1 - You’ll also have to create a few interactions with the DOM, 
     using what you’ve learned about JavaScript so far.
 
-    2 - you’ll have to deploy this project to Netlify, using the Git CLI to do so
-
 -->
 
 <!DOCTYPE html>
@@ -34,7 +32,7 @@
    <!-- making all the fields in the contact form required before being able to submit it.-->
 
    <div id="container">
-        <nav> <!--navigation bar-->
+        <nav  class="general-margins"> <!--navigation bar-->
             <div id="logo-nav">
                 <img src="images/logos/taylor.svg" alt="Taylor logo">
                 <!--
@@ -59,7 +57,7 @@
 
         </nav><!--end of navigation bar-->
 
-        <section id="contact-us" class="general-padding">
+        <section id="contact-us" class="general-margins">
             <h1>Contact Us</h1>
 
             <form>
@@ -79,9 +77,7 @@
                 </div><!--end of mail-phone-->
 
                 <label for="message">Message</label><br>
-                <textarea id="message" name="message" rows="4" cols="50" maxlength="200" class="label-100" placeholder="Write your message here ...">
-                    
-                </textarea><br>
+                <textarea id="message" name="message" class="label-100" placeholder="Write your message here ..."></textarea><br>
 
                 <button id="submit-form" class="blue-button">Submit</button>
 
@@ -90,7 +86,7 @@
         </section>
 
 
-        <footer>
+        <footer  class="general-margins">
             <div id="left-footer">
                 <img src="images/logos/taylor.svg" alt="Taylor logo">
                 <address>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486 </address>
