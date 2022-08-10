@@ -35,8 +35,9 @@
 #left-hero
 {
     padding-top:100px;
-    width: 24%;/*340px;/****** MAKE RESPONSIVE *******/
-    margin-right:7%;/*100px;/****** MAKE RESPONSIVE *******/
+    width: 35%;
+    margin-right:7%;
+    padding-left:6%;
 
 }
 

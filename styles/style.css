@@ -33,16 +33,22 @@
 
 body
 {
-    background-color: yellow;/*#F2F4FC;*/
+    background-color: #F2F4FC;
     color:#514D67;
     margin-top:60px;
     margin-bottom:60px;
-    padding-left:4%; /*60px; /****** MAKE RESPONSIVE *******/
-    padding-right:4%;/*60px; /****** MAKE RESPONSIVE *******/
+    padding-left:2%; /*60px; /****** MAKE RESPONSIVE *******/
+    padding-right:0;/*60px; /****** MAKE RESPONSIVE *******/
     font-weight:400;
     size:18px; /****** MAKE RESPONSIVE *******/
     /*width:100vw;********************* MODIFY ONCE WITH DOUBLE SCREEN*/
-    width:100%;
+    width:90%;
+}
+
+.container
+{
+    padding:0;
+    margin:0;
 }
 
 h1, h2
@@ -77,7 +83,7 @@ input[type=text], input[type="email"],input[type="tel"]
 {
     box-sizing: border-box; /*so the width contains the padding*/
     height:45px;
-    padding:1%;/*15px; /****** MAKE RESPONSIVE *******/
+    padding:1%;
     border:none;
 }
 
@@ -86,12 +92,16 @@ a:visited
     color:inherit; /* so that color doesn't change when a link is already visited*/
 }
 
-.general-margins
+.general-padding
 {
-    margin-right:0px;
-    
+    padding-left:4%;/*60px;*/
+    /*padding-right:60px;*/  
 }
 
+.short-margins
+{
+    margin-right:-6.5%;
+}
 /****************               NAV BAR                 ****************/
 nav
 {
@@ -100,12 +110,12 @@ nav
     flex-wrap:nowrap; /* to fit it all in the same line */
     justify-content:space-between; /* same space leftitem-leftmargin and rightitem-rightmargin */
     align-items:center;
-    background-color:aqua;
+
 }
 
 #logo-nav
 {
-    width: 12%/*70px; /****** MAKE RESPONSIVE *******/
+    width: 8%;
 }
 
 ul {
@@ -170,20 +180,21 @@ button a
 
 }
 
+
 /*************************   CARDS  (projects and services sections) ********************************/
 .cards-container
 {
     display:flex;
     flex-direction: row;
     justify-content:space-between;
-    background-color: darkmagenta;
+
     
 }
 
 .card
 {
-    width:80%;/****** MAKE RESPONSIVE *******/
-    background-color:darkkhaki;/*white;*/
+    width:30%;
+    background-color:white;
     box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
 }
 
@@ -267,8 +278,6 @@ button a
 /****************               FOOTER                 ****************/
 footer
 {
-    background-color: salmon;
-
     display:flex;
     flex-direction:row;
     justify-content:space-between;
@@ -324,22 +333,26 @@ address
         margin-bottom:5%;
    }
 
-   .general-margins
+   .container
    {
-    margin:0;
+    width:100%;
+    
    }
 
-
     /****************               NAV BAR                 ****************/
+
 
     #middle-nav
     {
         position:absolute;
          /* WHEN CLICKING HAMBURGER IGON, THIS SHALL ANIMATE TO POSITION ITSELF TO THIS POSITION*/
         left:0;
-        top:30%;
-        width:20%;
+        top:0;
+        width:25%;
+        padding-top:20%;
+        padding-left:10%;
         background-color:#072AC8;
+        z-index:5;
 
        
     }
@@ -347,7 +360,7 @@ address
     #logo-nav
     {
         width: 12%;/*70px; /****** MAKE RESPONSIVE *******/
-        padding-left:22%;
+        padding-left:45%;
     }
 
     ul {
@@ -385,9 +398,6 @@ address
     }
 
 
-
-
-
     #cta
     {
         margin-bottom: 5%;
@@ -396,18 +406,15 @@ address
         width:100%;
     }
 
-  
 
     footer
     {
-
         display:flex;
         flex-direction:column-reverse;
         align-items:center;
         margin-left:0px;/****** MAKE RESPONSIVE *******/
         margin-right:0px;/****** MAKE RESPONSIVE *******/
         font-size:12px;
-        background-color: aqua;
     }
 
     #left-footer img
