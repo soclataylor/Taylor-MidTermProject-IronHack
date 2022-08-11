@@ -572,23 +572,12 @@ address
 
 { 
 
-    body
-    {
-        background-color: deeppink
-    }
 
     footer
     {
         align-items:center;
     }
 
-    .card:hover 
-    { 
-        margin-top: 0px;
-        cursor:default;
-        box-shadow:none;
-        transition:none;
-    }
 
     #right-footer
     {
