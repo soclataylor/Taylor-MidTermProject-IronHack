@@ -110,6 +110,13 @@
     filter:grayscale();
 }
 
+.image-client:hover
+{
+    filter:none;
+    transform: scale(1.5);
+    transition: 0.1s linear;
+}
+
 /****************               PROJECTS SECTION                 ****************/
 #projects
 {
@@ -328,6 +335,12 @@ blockquote
         margin:5%;
     }
 
+    .image-client:hover
+    {
+        filter:grayscale();
+        transform:none;
+        transition:none;
+    }
  
 
             /*************************   CARDS  (projects and services sections) ********************************/
@@ -428,7 +441,12 @@ blockquote
 @media (min-width: 768px) and (max-width: 1024px)
 
 { 
-    /* the only thing that has to be fixed is the hero section*/
+    body
+    {
+        background-color: deeppink
+    }
+    
+    /* the only thing that has to be fixed is the hero section and client images*/
 
     #hero
     {
@@ -448,5 +466,11 @@ blockquote
         padding-top:30px;
     }
 
+    .image-client:hover
+    {
+        filter:grayscale();
+        transform:none;
+        transition:none;
+    }
 
 }

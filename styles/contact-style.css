@@ -87,8 +87,24 @@
 /* MOBILE*/
 @media (max-width:767px) 
 { 
-    
+    #contact-us
+    {
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+        
+    }
 
+    #contact-us button
+    {
+        margin-bottom:10%;
+        margin-top:2%;
+    }
+
+    footer
+    {
+        margin-top:0;
+    }
 }
 
 /* Medium devices (tablets, 768px and above till next break point)*/
@@ -97,6 +113,9 @@
 
 { 
 
-   
+    body
+    {
+        background-color: deeppink
+    }
 
 }

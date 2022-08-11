@@ -103,6 +103,13 @@ nav
     align-items:center;
 }
 
+
+
+input[type='checkbox'] /* the hidden checkbox */
+{
+        opacity:0;   
+}
+
 #logo-nav
 {
     width: 8%;
@@ -194,6 +201,15 @@ button:hover
     box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
 }
 
+.card:hover 
+{  
+
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
 .card img
 {
     width:100%;
@@ -245,7 +261,6 @@ button:hover
 }
 #cta form
 {
-
     margin-top:30px;
 }
 
@@ -349,6 +364,7 @@ address
         width: 12%;
         padding-left: 25px;
         padding-top:10px;
+        z-index:12;
     }
 
 
@@ -359,8 +375,8 @@ address
         position:absolute;
         width:100%;
         left:0;
-        top:-27px;
-        padding-top:0;
+        top: -75px;
+        padding-top:60px;
         z-index:5;
         -webkit-user-select:none;/*user can't select for chrome and firefox*/
         user-select:none;/*user can't select*/
@@ -370,16 +386,17 @@ address
     ul 
     { 
         margin: 0;
+        margin-top:-15px;
         padding: 0;
         overflow: hidden;
         list-style-type: none; /*remove the markers */
-        transform-origin: top left;
+        transform-origin: y-axis;
         transform: translate(0, -100%);
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
         background-color:#072AC8;
     }
     
-    /*we slide the menu from the left*/
+    /*we slide the menu from the top*/
     #middle-nav input:checked ~ ul
     {
         transform: none;
@@ -403,17 +420,16 @@ address
 
     li a:hover 
     {
-        /*quan passem per sobre dels enllaços que formen part d'un li*/
         color:yellow;
     }
     
-    #middle-nav input
+    #middle-nav input /* the hidden checkbox */
     {
         display:block;
         width:40px;
         height:32px;
         position:absolute;
-        top: 40px;
+        top: 90px;
         left:195px;
         cursor:pointer;
         opacity:0;/*we hide it*/
@@ -421,66 +437,80 @@ address
         -webkit-touch-callout:none; /*so that it doesn't show the info of a link when holding*/
     }
 
-    /* the hamburger */
-    #middle-nav span
+            /****************************** the hamburger *****************************/
+            #middle-nav span
+            {
+                display:block;
+                width:33px;
+                height:4px;
+                margin-bottom:5px;
+                position:relative;
+
+                top:35px; /***tHIS****/
+                left:200px;
+                background-color:#6B708D;
+                border-radius:3px;
+
+                z-index:3;
+                
+                transform-origin: 4px 0px;
+
+                transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                            background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                            opacity 0.55s ease;
+
+            }
+
+            #middle-nav span:first-child
+            {
+                transform-origin: 0% 0%;
+            }
+
+            #middle-nav span:nth-last-child(2)
+            {
+                transform-origin: 0% 100%;
+            }
+
+            /*transform the 3 slices of the hamburger into a crossmark*/
+            #middle-nav input:checked ~ span
+            {
+                opacity:1;
+                transform: rotate(45deg) translate(-2px, -1px);
+                background-color:#6B708D;
+            }
+
+            /*we hide the middle one*/
+            #middle-nav input:checked ~ span:nth-last-child(3)
+            {
+                opacity:0;
+                transform:rotate(0deg) scale(0.2, 0.2);
+            }
+
+            /*the last one is going the other direction*/
+            #middle-nav input:checked ~ span:nth-last-child(2)
+            {
+
+                transform:rotate(-45deg) translate(0,-1px);
+            }
+
+            /*************************** end of the hamburger *****************************/
+    
+    #right-nav
     {
-        display:block;
-        width:33px;
-        height:4px;
-        margin-bottom:5px;
-        position:relative;
-
-        top:40px;
-        left:200px;
-        background-color:#6B708D;
-        border-radius:3px;
-
-        z-index:3;
-        
-        transform-origin: 4px 0px;
-
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    opacity 0.55s ease;
+        z-index:10;
     }
-
-    #middle-nav span:first-child
-    {
-        transform-origin: 0% 0%;
-    }
-
-    #middle-nav span:nth-last-child(2)
-    {
-        transform-origin: 0% 100%;
-    }
-
-    /*transform the 3 slices of the hamburger into a crossmark*/
-    #middle-nav input:checked ~ span
-    {
-        opacity:1;
-        transform: rotate(45deg) translate(-2px, -1px);
-        background-color:#6B708D;
-    }
-
-    /*we hide the middle one*/
-    #middle-nav input:checked ~ span:nth-last-child(3)
-    {
-        opacity:0;
-        transform:rotate(0deg) scale(0.2, 0.2);
-    }
-
-    /*the last one is going the other direction*/
-    #middle-nav input:checked ~ span:nth-last-child(2)
-    {
-
-        transform:rotate(-45deg) translate(0,-1px);
-    }
-
     a.active 
     {
         color:white;
     }
 
+    .card:hover 
+    { 
+        margin-top: 0px;
+        cursor:default;
+        box-shadow:none;
+        transition:none;
+    }
 
     #cta
     {
@@ -490,6 +520,12 @@ address
         width:100%;
     }
 
+    #cta input[type=text]
+    {
+        width:80%;
+        padding-left:40px;
+        margin-bottom:30px;
+    }
 
     footer
     {
@@ -536,9 +572,22 @@ address
 
 { 
 
+    body
+    {
+        background-color: deeppink
+    }
+
     footer
     {
         align-items:center;
+    }
+
+    .card:hover 
+    { 
+        margin-top: 0px;
+        cursor:default;
+        box-shadow:none;
+        transition:none;
     }
 
     #right-footer
